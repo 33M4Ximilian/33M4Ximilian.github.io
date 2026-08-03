@@ -20,10 +20,6 @@ function setLanguage(language) {
     button.setAttribute("aria-pressed", String(active));
   });
 
-  cvLink.href =
-    language === "zh"
-      ? "assets/Hongjing-Zhu-CV-ZH.pdf"
-      : "assets/Hongjing-Zhu-CV-EN.pdf";
   cvLink.textContent = language === "zh" ? "简历" : "CV";
   localStorage.setItem("language", language);
 }
@@ -32,7 +28,7 @@ languageButtons.forEach((button) => {
   button.addEventListener("click", () => setLanguage(button.dataset.language));
 });
 
-setLanguage(localStorage.getItem("language") === "en" ? "en" : "zh");
+setLanguage(localStorage.getItem("language") === "zh" ? "zh" : "en");
 
 const sections = document.querySelectorAll("main section");
 const navigationLinks = document.querySelectorAll(".topbar nav a");
