@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
       content="Hongjing Zhu — undergraduate student interested in robotics, embodied AI, and robot learning."
     />
     <title>Hongjing Zhu | Robotics & Embodied AI</title>
-    <link rel="stylesheet" href="styles.css?v=20260730-8" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="topbar">
@@ -22,9 +22,9 @@
         <a href="#miscellaneous" data-en="About Me" data-zh="关于我">关于我</a>
       </nav>
       <div class="language-switch" aria-label="Language">
-        <button type="button" data-language="en">EN</button>
+        <button type="button" data-language="en" class="active">EN</button>
         <span>/</span>
-        <button type="button" data-language="zh" class="active">中文</button>
+        <button type="button" data-language="zh">中文</button>
       </div>
     </header>
 
@@ -51,29 +51,29 @@
             data-en="Email"
             data-zh="邮箱"
           >邮箱</a>
-          <a class="cv-link" href="assets/Hongjing-Zhu-CV-ZH.pdf" target="_blank">简历</a>
+          <a class="cv-link" href="assets/Hongjing-Zhu-CV-EN.pdf" target="_blank">CV</a>
           <a href="https://github.com/33M4Ximilian" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </aside>
 
       <div class="content">
         <section id="about" class="intro section-first">
-          <div data-content-language="zh">
+          <div data-content-language="zh" hidden>
             <p>你好！我是 <strong>Emilian</strong>，目前是 SZTU无人驾驶航空器系统工程专业的本科生。</p>
             <p>
-              我对<strong>机器人、具身智能和机器人学习</strong>很感兴趣。过去一段时间里，我接触了机器人强化学习、灵巧操作、视觉感知、运动规划、ROS 2 系统集成以及 Sim-to-Real 部署。这些经历让我能够从算法、仿真、感知、控制和真实硬件等不同层面理解一个机器人系统。
+              我对<strong>机器人、具身智能与机器人学习</strong>感兴趣，尤其希望理解机器人如何利用已有的知识和经验学习新任务，并在持续交互中逐步适应。此前，我的实践主要围绕灵巧操作中的强化学习展开，涵盖任务建模、仿真训练和真机部署。在这些经历的基础上，我希望进一步探索表征学习与常识复用、长时程任务中的记忆与规划，以及高层规划如何与即时响应的控制相互配合。
             </p>
             <p>
               现在我仍处在学习和探索的阶段。相比快速得到一个看起来不错的结果，我更愿意花时间理解系统为什么工作、又为什么失败。我喜欢把不熟悉的问题一点点拆开，也愿意和困难的问题多相处一会儿，再慢慢把想法变成可以运行的系统。
             </p>
             <p>目前，我正在继续学习机器人学习与具身智能，希望逐渐建立更扎实的理论基础，也积累更多真实系统中的实践经验。</p>
           </div>
-          <div data-content-language="en" hidden>
+          <div data-content-language="en">
             <p>
               Hi! I’m <strong>Emilian</strong>, an undergraduate student in Unmanned Aircraft Systems Engineering at SZTU.
             </p>
             <p>
-              I am interested in <strong>robotics, embodied AI, and robot learning</strong>. So far, I have explored reinforcement learning, dexterous manipulation, robotic perception, motion planning, ROS 2 system integration, and Sim-to-Real deployment. These experiences have helped me understand robotic systems from several connected perspectives, including algorithms, simulation, perception, control, and real hardware.
+              I am interested in <strong>robotics, embodied AI, and robot learning</strong>, particularly how robots can build on prior knowledge and experience to learn new tasks and adapt through continued interaction. My experience has focused on reinforcement learning for dexterous manipulation, from task modeling and simulation-based training to real-world deployment. Building on this foundation, I am interested in representation learning and the reuse of commonsense knowledge, memory and planning for long-horizon tasks, and how deliberative planning can work together with reactive control.
             </p>
             <p>
               I am still learning and exploring. Rather than focusing only on getting a system to work once, I enjoy understanding why it works, why it fails, and how its different components fit together. I am willing to stay with difficult problems, learn unfamiliar tools, and gradually turn an idea into a working system.
@@ -86,7 +86,7 @@
 
         <section id="resume">
           <h2 class="section-title" data-en="Résumé" data-zh="履历">履历</h2>
-          <div class="resume-timeline" data-content-language="zh">
+          <div class="resume-timeline" data-content-language="zh" hidden>
             <article class="resume-item">
               <span class="resume-icon resume-icon-sztu">
                 <img src="assets/logos/sztu-logo.svg" alt="深圳技术大学校徽" />
@@ -122,7 +122,7 @@
               <p class="resume-desc">搭建导航、双目感知、抓取与放置闭环，负责关键模块集成和异步状态机；团队获得本科组一等奖，决赛顺位第一。</p>
             </article>
           </div>
-          <div class="resume-timeline" data-content-language="en" hidden>
+          <div class="resume-timeline" data-content-language="en">
             <article class="resume-item">
               <span class="resume-icon resume-icon-sztu">
                 <img src="assets/logos/sztu-logo.svg" alt="Shenzhen Technology University Badge" />
@@ -216,10 +216,10 @@
 
         <section id="publications">
           <h2 class="section-title" data-en="Publications" data-zh="发表">发表</h2>
-          <div class="publication-note" data-content-language="zh">
+          <div class="publication-note" data-content-language="zh" hidden>
             <p>在写了在写了💦（擦汗）</p>
           </div>
-          <div class="publication-note" data-content-language="en" hidden>
+          <div class="publication-note" data-content-language="en">
             <p>Coming soon！</p>
           </div>
         </section>
@@ -237,7 +237,7 @@
 
         <section id="miscellaneous">
           <h2 class="section-title" data-en="About Me" data-zh="关于我">关于我</h2>
-          <div class="about-list" data-content-language="zh">
+          <div class="about-list" data-content-language="zh" hidden>
             <p><span>🔭</span>学习机器人相关领域，也会一点点UI/平面设计（兴趣爱好），目标成为宝可梦大师</p>
             <p><span>💬</span>我有很多名字，你可以叫我 Ami，Emilian，Emiya Rei，不过我的好朋友会叫我小猪</p>
             <p><span>🏎️</span>我很喜欢赛车和各种极限运动！我最喜欢的车队是法拉利，但我最喜欢的F1车手是Max Verstappen</p>
@@ -245,7 +245,7 @@
             <p><span>❤️</span>我爱我的爸爸妈妈和好朋友</p>
             <p><span>🦁</span>Never stop，keep pushing the limits！</p>
           </div>
-          <div class="about-list" data-content-language="en" hidden>
+          <div class="about-list" data-content-language="en">
             <p><span>🔭</span>I study robotics and also enjoy a little UI and graphic design. My ultimate goal is to become a Pokémon Master.</p>
             <p><span>💬</span>I have many names—Ami, Emilian, or Emiya Rei. Just call me Ami！</p>
             <p><span>🏎️</span>I love car racing and extreme sports. Ferrari is my favorite team, while Max Verstappen is my favorite F1 driver.</p>
